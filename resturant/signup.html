@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Kitchen</title>
+    <link rel="stylesheet" href="/resturant/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="form">
+        <img src="/resturant/assets/navbar logo.png" alt="james picture">
+
+        <h3>Welcome to James Kitchen</h3>
+
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstName" placeholder="enter firstname" required/>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastName" placeholder="enter lastname" required/>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="example@com" required/>
+
+        <label for="password">Password</label>
+        <input type="text" id="password" placeholder="Requires 8 characters only" required>
+
+        <button onclick="successFull()">Sign Up</button>
+
+
+    </div>
+
+
+    <div id="overlay">
+
+        <div id="modal">
+
+            <h4 id="welcomeText"></h4>
+
+            <h4 id="message"></h4>
+
+            <button onclick="closeModal()">OK</button>
+
+        </div>
+
+    </div> 
+
+    <script src="/script.js"></script>
+    
+</body>
+</html>

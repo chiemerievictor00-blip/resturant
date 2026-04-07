@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* styling navbar */
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    font-weight: bold;
+    font-size: 30px;
+    color: #ff0000;
+    font-family: "Jura", sans-serif;
+}
+
+.navlinks ul {
+    display: flex;
+    padding-left: 400px;
+    padding-top: 65px;
+    gap: 90px;
+
+}
+
+.navlinks ul a {
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Jura", sans-serif;
+}
+
+.navlinks ul a:hover {
+    color: #ffffff;
+    background-color: #f56c6c;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.bx {
+    font-size: 30px;
+}
+
+/* styling about us */
+
+.aboutus {
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 50px;
+    gap: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.abtimg img {
+    width: 500px;
+    height: 400px;
+    border-radius: 30px;
+}
+
+.abtwrite {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.p2 {
+    margin-top: 30px;
+}
+
+.abthead {
+    font-size: 30px;
+    margin-top: 200px;
+    text-align: center;
+    color: #ff0000;
+    font-family: "Jura", sans-serif;
+}
+
+/* stying core values */
+
+.head {
+    margin-top: 100px;
+    color: #ff0000;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-size: 30px;
+}
+
+
+.corevalues {
+    background-color: #ff0000;
+    padding: 30px;
+    margin: 20px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    text-align: center;
+}
+
+.vision {
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+p {
+    color: #ff0000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #000000;
+    font-family: "Jura", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* styling footer */
+
+.footer {
+
+    display: flex;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.footer h2 {
+    color: #ff0000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+.footerlinks p {
+    color: #ff0000;
+    font-size: 20px;
+}
+
+.footerlogo img {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.footerlogo h2 {
+    color: #ff0000;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footerlogo p {
+    font-size: 20px;
+    color: #ff0000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.socials ul {
+    display: flex;
+    gap: 20px;
+}
+
+.footerlinks {
+    display: flex;
+    gap: 150px;
+    padding-left: 60px;
+    margin-top: 60px;
+}
+
+.quicknav a {
+    color: #ff0000;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+.quicknav ul li {
+    margin-bottom: 20px;
+}
+
+
+/* theme toggle */
+
+
+#themeToggle {
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 15px;
+    border: none;
+}
+
+
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --nav-color: #f5f5f5;
+  --card-color: #ffffff;
+}
+
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --nav-color: #1f1f1f;
+  --card-color: #1e1e1e;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+nav {
+  background: var(--nav-color);
+}
+
+.card {
+  background: var(--card-color);
+}
