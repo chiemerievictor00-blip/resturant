@@ -1,37 +1,27 @@
-// Relocate windows to signup page
 
-  // document.addEventListener("DOMContentLoaded", function () {
-  //   window.location.href = "signup.html";
-  // });
-  
-
-
-// signup scripting
-
-function successFull() {
-  // Get user input
-  let firstName = document.getElementById("firstName").value;
+function showModal() {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
 
-  // Check if fields are filled
-  if (firstName === "" || email === "" || password === "") {
-    alert("Please fill all fields");
+//   check if fields are complete
+
+  if (email === "" || password === "") {
+    alert("please complete your details");
     return;
   }
 
-  document.getElementById("welcomeText").textContent =
-    "Successfully signed up.";
+  document.getElementById("welcomeText").textContent = "signup successfull,";
   document.getElementById("overlay").style.display = "flex";
 }
 
 function closeModal() {
   document.getElementById("overlay").style.display = "none";
-  window.location.href = "index.html";
+    // sends user to landing page
+  window.location.href = "index.html"
 }
 
 
-
+// Dark mode Light mode
 
 const themeToggle = document.getElementById("themeToggle");
 
@@ -47,14 +37,10 @@ themeToggle.onclick = function () {
     }
 }
 
-
-
 // Apply saved theme on every page
 if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");
 }
-
-
 
 
 
@@ -81,7 +67,6 @@ function prevSlide() {
 // document.querySelector(".right-arrow").onclick = nextSlide;
 // document.querySelector(".left-arrow").onclick = prevSlide;
 
-setInterval(nextSlide, 2000);
+setInterval(nextSlide, 1000);
 
 });
-
